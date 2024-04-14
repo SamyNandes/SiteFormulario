@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>App - Orçamento</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+	</style>
+  <script src="logica.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary mb-5">
+<div class="container">
+  <a class="navbar-brand" href=""><img src="logo.png" alt=""></a>
+  <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="consulta.html" class="nav-link">Consulta</a>
+            </li>
+            <li class="nav-item active">
+                <a href="index.html" class="nav-link">Orçamento</a>
+            </li>
+        </ul>
+</div>
+</nav>
+<div class="container">
+<div class="row mb-5"><div class="col display-4">Registro de nova despesa</div></div>
+<div class="row mb-3">
+	<div class="col-md-2">
+	<select class="form-control" id="ano"><option value="">Ano</option>
+  <option value="2018">2018</option>
+</select>
+</div>
+<div class="col-md-2"><select class="form-control" id="mes"><option value="">Mês</option>
+  <option value="01">Janeiro</option>
+  <option value="02">Fevereiro</option>
+  <option value="03">Março</option>
+  <option value="04">Abril</option>
+  <option value="05">Maio</option>
+  <option value="06">Junho</option>
+  <option value="07">Julho</option>
+  <option value="08">Agosto</option>
+  <option value="09">Setembro</option>
+  <option value="10">Outubro</option>
+  <option value="11">Novembro</option>
+  <option value="12">Dezembro</option>
+</select></div>
+<div class="col-md-2"><input id="dia" placeholder="Dia" type="text" maxlength="2" class="form-control">
+</div>
+<div class="col-md-6"><select class="form-control" id="tipo">
+            <option value="">Tipo</option>
+            <option value="Alimentação">Alimentação</option>
+            <option value="Educação">Educação</option>
+            <option value="Lazer">Lazer</option>
+            <option value="Saúde">Saúde</option>
+            <option value="Transporte">Transporte</option>
+          </select>
+</div>
+</div>
+<div class="row">
+	<div class="col-md-8">
+		<input placeholder="Descrição" type="text" id="descricao" class="form-control">
+	</div>
+	<div class="col-md-2">
+		<input placeholder="Valor" type="number" min="1" id="valor" class="form-control">
+	</div>
+	<div class="col-md-2">
+		<button class="form-control bg-primary text-white" onclick="verifSubmit()">Enviar</button>
+	</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
